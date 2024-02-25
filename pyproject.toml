@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "adventofcode2023"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+black = "^23.11.0"
+pytest = "^7.4.3"
+numpy = "^1.26.2"
+
+[tool.pytest.ini_options]
+markers = [
+    "unit: unit tests only testing support functions.",
+    "example: running the example inputs.",
+    "real: running the real inputs."
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
